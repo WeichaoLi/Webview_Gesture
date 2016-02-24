@@ -34,6 +34,9 @@ typedef enum SwitchPageDirection{
     _webviw.scrollView.alwaysBounceVertical = YES;
     _webviw.scrollView.pagingEnabled = YES;
     
+    _webviw.backgroundColor = [UIColor whiteColor];
+    
+    
     NSURL *url = [[NSURL alloc] initWithString:@"http://k3p.l.mob.com/OKL2Q"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     [_webviw loadRequest:request];
